@@ -83,7 +83,7 @@
 </html>
 
 <script>
-    var nilai = document.getElementById("nilai");
+var nilai = document.getElementById("nilai");
 var toefl = document.getElementById("toefl");
 var nilai_tertulis = document.getElementById("nilai_tertulis");
 var nilai_praktek = document.getElementById("nilai_praktek");
@@ -109,32 +109,32 @@ var v_nilai_tertulis = (parseInt(nilai_ujian_tertulis_1)+ parseInt(nilai_ujian_t
 var v_nilai_praktek = nilai_ujian_praktek
 
 if (avg_nilai_ujian > 90) {
-  nilai_tertulis.innerHTML = "Nilai Tertulis " +v_nilai_tertulis
-  nilai_praktek.innerHTML = "Nilai Praktek " + v_nilai_praktek
-  status_beasiswa.innerHTML="LULUS BEASISWA"
-  rata_nilai.innerHTML= avg_nilai_ujian.toFixed(0)
-  rata_nilai_1.innerHTML= avg_nilai_ujian.toFixed(0)
+    nilai_tertulis.innerHTML = "Nilai Tertulis " +v_nilai_tertulis
+    nilai_praktek.innerHTML = "Nilai Praktek " + v_nilai_praktek
+    status_beasiswa.innerHTML="LULUS BEASISWA"
+    rata_nilai.innerHTML= avg_nilai_ujian.toFixed(0)
+    rata_nilai_1.innerHTML= avg_nilai_ujian.toFixed(0)
 }
 else {
     nilai_tertulis.innerHTML = "Nilai Tertulis " +v_nilai_tertulis
-  nilai_praktek.innerHTML = "Nilai Praktek " + v_nilai_praktek
+    nilai_praktek.innerHTML = "Nilai Praktek " + v_nilai_praktek
     status_beasiswa.innerHTML= "TIDAK LULUS BEASISWA"
     rata_nilai.innerHTML= avg_nilai_ujian.toFixed(0)
     rata_nilai_1.innerHTML= avg_nilai_ujian.toFixed(0)
 }
 
 if (nilai_ujian_toefl > 500){
-  nilai_toefl.innerHTML = nilai_ujian_toefl
-  na_toefl.innerHTML = 'Nilai 100'
+    nilai_toefl.innerHTML = nilai_ujian_toefl
+    na_toefl.innerHTML = 'Nilai 100'
 
 }
 else if(nilai_ujian_toefl <= 500 && nilai_ujian_toefl>=450){
-  nilai_toefl.innerHTML = nilai_ujian_toefl
-  na_toefl.innerHTML = 'Nilai 85'
+    nilai_toefl.innerHTML = nilai_ujian_toefl
+    na_toefl.innerHTML = 'Nilai 85'
 }
-else if(nilai_ujian_toefl <450){
-  nilai_toefl.innerHTML = nilai_ujian_toefl
-  na_toefl.innerHTML = 'Nilai 50'
+else if(nilai_ujian_toefl < 450){
+    nilai_toefl.innerHTML = nilai_ujian_toefl
+    na_toefl.innerHTML = 'Nilai 50'
 }
 
 </script>
